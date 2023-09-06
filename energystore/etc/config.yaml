@@ -1,0 +1,14 @@
+persistence:
+  path: "/opt/rawdata"
+
+jwt:
+  pubKeyFile: "/run/secrets/eegfaktura-jwt-public-key"
+
+mqtt:
+  host: "eegfaktura-mosquitto:1883"
+  id: "eegfaktura-energystore-1"
+  qos: 1
+  energySubscriptionTopic: "eda/response/energy/+"
+
+services:
+  mail-server: "eegfaktura-eda:9090"
